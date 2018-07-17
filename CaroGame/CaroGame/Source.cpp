@@ -317,7 +317,7 @@ void play() {
 		}
 	}
 	if (ch == OK) {
-		// Neu ma da co gia tri
+		// if the box has checked
 		if (a[x][y] != 0) {
 			gotoxy(15, 1);
 			txtColor(10);
@@ -328,7 +328,7 @@ void play() {
 			gotoxy(x, y);
 			play();
 		}
-		// luc nay da chon o khong co gia tri
+		// if the box is still empty
 		turn++;
 		if (turn % 2 == 0) {  // Player 2's turn
 			a[x][y] = 2;
