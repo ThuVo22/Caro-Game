@@ -7,9 +7,9 @@
 using namespace std;
 
 #define UP		119  // w
-#define DOWN	115  // s
-#define LEFT	97   // a
-#define RIGHT   100  // d
+#define DOWN		115  // s
+#define LEFT		97   // a
+#define RIGHT   	100  // d
 #define OK		13   // enter
 
 int a[100][100];
@@ -321,7 +321,7 @@ void play() {
 		if (a[x][y] != 0) {
 			gotoxy(15, 1);
 			txtColor(10);
-			cout << "O nay khong trong. Ban hay chon o khac ...";
+			cout << "This box is not empty, please choose another box...";
 			_getch();
 			gotoxy(15, 1);
 			cout << "                                            ";
